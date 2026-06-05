@@ -1,5 +1,6 @@
 package br.com.joao.artistregistration.main;
 
+import br.com.joao.artistregistration.model.Artist;
 import br.com.joao.artistregistration.repository.ArtistRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -27,6 +28,7 @@ public class Main implements CommandLineRunner {
                     0 - Exit
                     """);
 
+            System.out.print("\nOption: ");
             option = read.nextInt();
             read.nextLine();
 

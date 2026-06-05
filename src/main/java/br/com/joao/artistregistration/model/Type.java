@@ -1,4 +1,4 @@
-package br.com.joao.artistregistration.main;
+package br.com.joao.artistregistration.model;
 
 public enum Type {
     SOLO("solo"),

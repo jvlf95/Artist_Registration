@@ -10,7 +10,7 @@ public class Song {
     private Long id;
     private String name;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name = "artist_id")
     private Artist artist;
 
@@ -32,5 +32,10 @@ public class Song {
         this.artist = artist;
     }
 
+    @Override
+    public String toString(){
+        return "\nSong Name: " + getName() +
+                "\nArtist Name: " + artist.getName();
+     }
 
 }
